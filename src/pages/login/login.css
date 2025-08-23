@@ -1,0 +1,70 @@
+.form-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(16px, 4vw, 40px);
+}
+.box-flex{
+    background: #FFFFF0;
+    padding: clamp(20px, 4vw, 40px);
+    width: min(520px, 92%);
+    border-radius: 16px;
+    border: 1px solid #ead8d2; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+.input {
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+  
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+  
+.input:active {
+    transform: scale(0.95);
+}
+  
+.input:focus {
+    border: 2px solid #D6A99D;
+    box-shadow: 0 0 0 4px rgba(214, 169, 157, 0.15);
+}
+
+.form-group{ margin-bottom: 16px; }
+.form-group label{
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.box-flex .btn{
+  width: 100%;
+  display: inline-block;
+  background: #D6A99D; 
+  color: #2b1f1a;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow: 0 6px 16px rgba(214, 169, 157, 0.35);
+}
+.box-flex .btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(214, 169, 157, 0.45);
+  filter: brightness(0.98);
+}
+
+@media (max-width: 480px){
+  .box-flex{ padding: 16px; }
+}

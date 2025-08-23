@@ -1,0 +1,28 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    --base: #FBF3D5;        
+    --shade: #EEDCA8;        
+    --tint: #FFF9E8;         
+    background-color: var(--base);
+    background-image:
+      radial-gradient(900px 600px at 12% 18%, rgba(238,220,168,0.28) 0%, rgba(238,220,168,0) 60%),
+      radial-gradient(700px 500px at 85% 25%, rgba(255,249,232,0.6) 0%, rgba(255,249,232,0) 55%),
+      radial-gradient(600px 450px at 50% 90%, rgba(238,220,168,0.22) 0%, rgba(238,220,168,0) 60%), /* bottom blob */
+      repeating-radial-gradient(circle at 10% 10%, rgba(0,0,0,0.035) 0 2px, transparent 2px 24px),
+      repeating-radial-gradient(circle at 80% 80%, rgba(255,255,255,0.4) 0 2px, transparent 2px 22px);
+    background-attachment: fixed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body { background-attachment: scroll; }
+}
+.x{
+  min-height: calc(100vh - 110px);
+}
